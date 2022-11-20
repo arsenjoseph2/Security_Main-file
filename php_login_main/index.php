@@ -19,7 +19,7 @@ if (isset($_SESSION["user_id"])) {
 <html>
 <head>
     <title>Index</title>
-    <meta charset="UTF-8">
+    
 	
 
     <link rel="stylesheet" href="">
@@ -32,7 +32,7 @@ if (isset($_SESSION["user_id"])) {
     <?php if (isset($user)): ?>
 	
      
-        <p>Hello <?= htmlspecialchars($user["name"]) ?></p>
+        <p>Welcome.. <?= htmlspecialchars($user["name"]) ?></p>
         
         <p><a href="logout.php">Log out</a></p>
 		
